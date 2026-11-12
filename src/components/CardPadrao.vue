@@ -14,7 +14,7 @@ defineProps({
 </script>
 <template>
     <div class="card">
-        <img :src="imagem" alt="">
+        <img v-if="imagem" alt="">
         <h3>{{ titulo }}</h3>
         <p v-if="subtitulo">{{ subtitulo }}</p>
     </div>
